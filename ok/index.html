@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa del Sorriso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        header img {
+            height: 80px;
+            width: auto;
+        }
+        nav {
+            background-color: #4d4d4d;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px;
+            background-color: #e6f2ff;
+            border-bottom: 5px solid #007acc;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+        .section h2 {
+            text-align: center;
+            color: #007acc;
+        }
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .section-content img {
+            flex: 1 1 40%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .section-content div {
+            flex: 1 1 55%;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4d4d4d;
+            color: white;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #007acc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-casa-di-riposo.webp" alt="Logo Casa del Sorriso">
+    <div>
+        <h1>Casa del Sorriso</h1>
+        <p>Un luogo esclusivo dove l’amore e l’assistenza incontrano la serenità.</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#chi-siamo">Chi Siamo</a>
+    <a href="#servizi">Servizi</a>
+    <a href="#strutture">Strutture</a>
+    <a href="#richiesta">Richiesta di Ammissione</a>
+    <a href="#contatti">Contatti</a>
+</nav>
+
+<div class="hero">
+    <h2>Benvenuti alla Casa del Sorriso</h2>
+    <p>Solo 8 ospiti, per garantire la massima cura e attenzione.</p>
+    <button onclick="document.getElementById('richiesta').scrollIntoView()">Invia una Richiesta</button>
+</div>
+
+<hr style="border: none; border-top: 5px solid #007acc; margin: 30px 0;">
+
+<section id="chi-siamo" class="section">
+    <h2>Chi Siamo</h2>
+    <div class="section-content">
+        <img src="https://via.placeholder.com/300" alt="Accoglienza calorosa">
+        <div>
+            <p>La Casa del Sorriso nasce per offrire ai tuoi cari un ambiente caldo e accogliente, dove amore e assistenza sono al primo posto. Con un team altamente qualificato e due soci fondatori sempre presenti, garantiamo un rapporto di fiducia e serenità.</p>
+            <p><strong>Valori:</strong> Alta assistenza, rispetto, inclusione e spensieratezza.</p>
+        </div>
+    </div>
+</section>
+
+<section id="servizi" class="section">
+    <h2>Servizi</h2>
+    <div class="section-content">
+        <img src="image.png" alt="Fisioterapia per anziani">
+        <div>
+            <h3>Servizi di Base</h3>
+            <ul>
+                <li>Alloggio in camere doppie confortevoli</li>
+                <li>Pasti personalizzati e bilanciati</li>
+                <li>Assistenza medica di base</li>
+                <li>Attività ricreative e lavanderia</li>
+            </ul>
+            <h3>Servizi Specializzati</h3>
+            <ul>
+                <li>Fisioterapia e riabilitazione</li>
+                <li>Programmi di socializzazione</li>
+                <li>Assistenza psicologica per ospiti e famiglie</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="strutture" class="section">
+    <h2>Strutture</h2>
+    <div class="section-content">
+        <img src="https://via.placeholder.com/300" alt="Strutture accoglienti">
+        <div>
+            <p>La Casa del Sorriso dispone di strutture progettate per il massimo comfort:</p>
+            <ul>
+                <li>4 camere doppie spaziose e accoglienti</li>
+                <li>Sala ricreativa per attività di gruppo</li>
+                <li>Sala pranzo conviviale</li>
+                <li>Giardino privato</li>
+                <li>Sala attrezzata per fisioterapia e corsi</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="richiesta" class="section">
+    <h2>Richiesta di Ammissione</h2>
+    <form action="#" method="post">
+        <label for="nome">Nome del Richiedente:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="ospite">Nome dell'Ospite:</label><br>
+        <input type="text" id="ospite" name="ospite" required><br><br>
+        <label for="contatto">Contatto (Email/Telefono):</label><br>
+        <input type="text" id="contatto" name="contatto" required><br><br>
+        <label for="descrizione">Descrizione delle Necessità:</label><br>
+        <textarea id="descrizione" name="descrizione" rows="5" required></textarea><br><br>
+        <button type="submit">Invia Richiesta</button>
+    </form>
+</section>
+
+<section id="contatti" class="section">
+    <h2>Contatti</h2>
+    <p>Email: <a href="mailto:casadelsorriso@gmail.com">casadelsorriso@gmail.com</a></p>
+    <p>Telefono: <a href="tel:+390374657789">0374657789</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Casa del Sorriso. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
+
+
+
